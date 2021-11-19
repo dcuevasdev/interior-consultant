@@ -158,3 +158,22 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
 }
+
+/*==============
+  Section Footer
+================*/
+.footer {
+  margin: 14.4rem 0 1.6rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--color-light);
+  cursor: pointer;
+  transition: all 300ms;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #de5021;
+}
