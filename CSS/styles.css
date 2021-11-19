@@ -68,3 +68,93 @@ body {
 .header__menuList li:hover a {
   font-weight: 700;
 }
+
+/*===============
+  Section Content
+=================*/
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6.4rem;
+}
+.content__text {
+  width: 41rem;
+}
+.content__text h1 {
+  margin-bottom: 4rem;
+  font-family: "Lora";
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+.content__text p {
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.content__button {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  height: 3.2rem;
+}
+.content__button:hover {
+  cursor: pointer;
+}
+.content__button a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--color-light);
+}
+.content__button .icon {
+  content: url("../assets/trending_flat.svg");
+}
+.content__design {
+  position: relative;
+}
+.content__design .design__image {
+  width: 73.7rem;
+}
+.content__design .design__image img {
+  width: 100%;
+}
+.design__card {
+  position: absolute;
+  left: calc(100% - 45rem);
+  bottom: -9.45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+  width: 41rem;
+  height: 18.9rem;
+  padding-left: 3.2rem;
+  background-color: var(--color-dark);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
+}
+.design__profile {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.design__profile img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.design__profile--data h3 {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.design__profile--data span {
+  font-size: 1.2rem;
+  color: var(--color-gray-one);
+}
+.design__card h2 {
+  width: 25rem;
+  font-family: "Lora";
+  font-size: 2.4rem;
+  font-weight: 700;
+}
