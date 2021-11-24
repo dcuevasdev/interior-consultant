@@ -22,6 +22,7 @@ body {
 .main {
   display: grid;
   max-width: 120rem;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -79,7 +80,7 @@ body {
   margin-top: 6.4rem;
 }
 .content__text {
-  width: 41rem;
+  width: 40%;
 }
 .content__text h1 {
   margin-bottom: 4rem;
@@ -88,6 +89,7 @@ body {
   font-weight: 500;
 }
 .content__text p {
+  width: 41rem;
   margin-bottom: 4rem;
   font-size: 2.4rem;
   font-weight: 400;
@@ -110,10 +112,11 @@ body {
   content: url("../assets/trending_flat.svg");
 }
 .content__design {
+  width: 50%;
   position: relative;
 }
 .content__design .design__image {
-  width: 73.7rem;
+  width: 100%;
 }
 .content__design .design__image img {
   width: 100%;
@@ -176,4 +179,44 @@ body {
 .footer a:hover {
   text-decoration: underline;
   color: #de5021;
+}
+
+/*=============
+  Styles Mobile
+===============*/
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+  .content__text {
+    width: 90%;
+  }
+  .content__design {
+    width: 90%;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 748px) {
+  .content__text h1 {
+    margin-bottom: 2.4rem;
+    font-size: 3.6rem;
+  }
+  .content__text p {
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+  }
+  .content__button a {
+    font-size: 1.4rem;
+  }
+  .design__profile--data h3 {
+    font-size: 1.2rem;
+  }
+  .design__profile--data span {
+    font-size: 1rem;
+  }
+  .design__card h2 {
+    font-size: 1.8rem;
+  }
 }
