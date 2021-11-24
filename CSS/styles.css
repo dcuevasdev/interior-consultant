@@ -20,9 +20,7 @@ body {
   background-color: var(--color-dark);
 }
 .main {
-  display: grid;
   max-width: 120rem;
-  height: 100vh;
   margin: 0 auto;
 }
 
@@ -77,6 +75,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-top: 6.4rem;
 }
 .content__text {
@@ -199,11 +198,28 @@ body {
 }
 
 @media (max-width: 748px) {
+  /*============
+  Section Header
+================*/
+  .header {
+    padding: 0 0.8rem;
+  }
+  .header__menu {
+    display: none;
+  }
+
+  /*=============
+  Section Content
+=================*/
+  .content {
+    margin-top: 0.8rem;
+  }
   .content__text h1 {
     margin-bottom: 2.4rem;
     font-size: 3.6rem;
   }
   .content__text p {
+    width: 90%;
     margin-bottom: 2.4rem;
     font-size: 1.4rem;
   }
@@ -218,5 +234,13 @@ body {
   }
   .design__card h2 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .design__card {
+    left: calc(100% - 31rem);
+    width: 30rem;
+    height: 16rem;
   }
 }
