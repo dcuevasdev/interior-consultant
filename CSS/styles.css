@@ -43,9 +43,15 @@ body {
   font-family: "Crimson Pro";
   text-align: center;
 }
+.header__button-menu {
+  display: none;
+}
 .header__menu {
   width: 62.4rem;
   text-align: right;
+}
+.header__button-close {
+  display: none;
 }
 .header__menuList {
   list-style: none;
@@ -204,8 +210,42 @@ body {
   /*============
   Section Header
 ================*/
-  .header__menu {
-    display: none;
+  .header__button-menu {
+    display: block;
+  }
+  .header__button-close {
+    display: block;
+    margin: 1.6rem 1.6rem 0;
+  }
+  .header__button-close button {
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  .header__button-close button:hover {
+    cursor: pointer;
+  }
+  .header__menu-isActive {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100vw;
+    background-color: var(--color-dark);
+  }
+  .header__menuList {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header__menuList li {
+    display: block;
+    margin-bottom: 3.2rem;
   }
 
   /*=============
