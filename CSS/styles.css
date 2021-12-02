@@ -185,6 +185,9 @@ body {
 ===============*/
 
 @media (max-width: 1200px) {
+  .header {
+    padding: 0 0.8rem;
+  }
   .content {
     flex-direction: column;
   }
@@ -201,9 +204,6 @@ body {
   /*============
   Section Header
 ================*/
-  .header {
-    padding: 0 0.8rem;
-  }
   .header__menu {
     display: none;
   }
